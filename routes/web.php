@@ -3,5 +3,14 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('layouts.master');
+    return view('index');
+});
+
+Route::get('/register', function () {
+    return view('auth.register');
+});
+
+
+Route::get('/login', function () {
+    return view('auth.login');
 });
