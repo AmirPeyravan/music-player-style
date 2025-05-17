@@ -6,11 +6,25 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/register', function () {
-    return view('auth.register');
+Route::prefix('auth')->group(function () {
+
+    Route::get('/register', function () {
+        return view('auth.register');
+    })->name('register');
+
+    Route::get('/login', function () {
+        return view('auth.login');
+    })->name('login');
+
+});
+
+Route::prefix('dashboard')->group(function () {
+
+    Route::get('/', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
 });
 
 
-Route::get('/login', function () {
-    return view('auth.login');
-});
+
