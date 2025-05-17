@@ -227,7 +227,7 @@
         <button type="submit" class="btn btn-primary">ثبت نام</button>
     </form>
     <div class="auth-link">
-        حساب کاربری دارید؟ <a href="/login">وارد شوید</a>
+        حساب کاربری دارید؟ <a href="/auth/login">وارد شوید</a>
     </div>
 </div>
 </body>

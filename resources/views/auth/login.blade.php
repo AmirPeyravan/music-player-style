@@ -220,7 +220,7 @@
     </form>
 
     <div class="auth-link">
-        حساب کاربری ندارید؟ <a href="/register">ثبت‌نام کنید</a>
+        حساب کاربری ندارید؟ <a href="/auth/register">ثبت‌نام کنید</a>
     </div>
 </div>
 </body>
